@@ -3,76 +3,105 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jonathan A. Noah</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+    section {
+      padding: 60px 20px;
+      transition: background-color 0.6s ease;
+    }
+    .hero {
+      background-color: #f5f5f5;
+      text-align: center;
+    }
+    .about {
+      background-color: #e9ecef;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+      padding: 60px;
+    }
+    .about img {
+      max-width: 300px;
+      border-radius: 12px;
+    }
+    .portfolio {
+      background-color: #fff;
+    }
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    iframe {
+      width: 100%;
+      height: 200px;
+    }
+    .contact {
+      background-color: #dfe6e9;
+      text-align: center;
+    }
+    .contact img {
+      max-width: 300px;
+      border-radius: 12px;
+    }
+    form input, form textarea, form button {
+      padding: 10px;
+      margin: 8px;
+      width: 80%;
+      max-width: 400px;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="hero">
-      <h1>Jonathan A. Noah</h1>
-      <p class="headline">Producer | Content & Creator Partnerships | Development & Programming | YouTube | Podcasts | Streaming</p>
+  <section class="hero">
+    <h1>Jonathan A. Noah</h1>
+    <p>Producer | Content & Creator Partnerships | Development & Programming | YouTube | Podcasts | Streaming</p>
+  </section>
+
+  <section class="about">
+    <img src="JN_site_photo.avif" alt="Jonathan A. Noah" />
+    <div>
+      <p>Jonathan Noah is an accomplished Creative Leader, Executive Producer, and Creative Director with over a decade's worth of experience working with major international media brands.</p>
+      <p>Noah's experience includes managing production teams and Executive Producing both original and branded content for YouTube, Meta, TikTok, linear, and streaming platforms for publishers like BuzzFeed, MTV, GSN, CBS, and more. His content has been seen by audiences in over 180 countries and gained hundreds of millions of impressions through linear and digital streams. With a strong background in content development, talent management, broadcast and digital media, Noah brings a diverse approach to production of all forms.</p>
+      <p>Beyond his professional experience, Jonathan enjoys discovering new music, listening to podcasts, adventuring with his dog, traveling the world, and cooking full course meals.</p>
     </div>
-  </header>
+  </section>
 
-  <main>
-    <section id="about" class="content-section">
-      <h2>About</h2>
-      <div class="about-content">
-        <img src="jn_photo.avif" alt="Jonathan Noah" class="profile-photo" />
-        <p>
-          Jonathan Noah is an accomplished Creative Leader, Executive Producer, and Creative Director with over a decade's worth of experience working with major international media brands.
-          <br><br>
-          Noah's experience includes managing production teams and Executive Producing both original and branded content for YouTube, Meta, TikTok, linear, and streaming platforms for publishers like BuzzFeed, MTV, GSN, CBS, and more. His content has been seen by audiences in over 180 countries and gained hundreds of millions of impressions through linear and digital streams. With a strong background in content development, talent management, broadcast and digital media, Noah brings a diverse approach to production of all forms.
-          <br><br>
-          Beyond his professional experience, Jonathan enjoys discovering new music, listening to podcasts, adventuring with his dog, traveling the world, and cooking full course meals.
-        </p>
-      </div>
-    </section>
+  <section class="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-grid">
+      <iframe src="https://www.youtube.com/embed/do6_7HugMXs" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/8I9TBGgYOL8" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/8H5UsEqCqrg" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/YLt73w6criQ" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/8V7yBZRyVoI" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://player.vimeo.com/video/787045311" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/B1s-zJVHsIg" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/DwkopBWpQ70" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/DA22SMJMmAU" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/GQEUeoqs5ME" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/_CKDjt_I2aU" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/hFGCsLjOzm4" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
 
-    <section id="portfolio" class="content-section">
-      <h2>Portfolio</h2>
-      <div class="video-grid">
-        <iframe src="https://www.youtube.com/embed/do6_7HugMXs" frameborder="0" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/8I9TBGgYOL8" frameborder="0" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/8H5UsEqCqrg" frameborder="0" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/YLt73w6criQ" frameborder="0" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/8V7yBZRyVoI" frameborder="0" allowfullscreen></iframe>
-        <iframe src="https://player.vimeo.com/video/787045311" frameborder="0" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/B1s-zJVHsIg" frameborder="0" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/DwkopBWpQ70" frameborder="0" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/DA22SMJMmAU" frameborder="0" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/GQEUeoqs5ME" frameborder="0" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/_CKDjt_I2aU" frameborder="0" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/hFGCsLjOzm4" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </section>
-
-    <section id="contact" class="content-section">
-      <h2>Contact</h2>
-      <div class="contact-content">
-        <form action="https://formspree.io/f/your-form-id" method="POST">
-          <input type="text" name="name" placeholder="Name" required />
-          <input type="email" name="_replyto" placeholder="Email" required />
-          <textarea name="message" placeholder="Message" required></textarea>
-          <button type="submit">Submit</button>
-        </form>
-        <img src="harley_photo.avif" alt="Harley the dog" class="contact-photo" />
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 by Jonathan A. Noah</p>
-  </footer>
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Preferred method: use the form below.</p>
+    <img src="Harley_site_photo.avif" alt="Harley the Dog" />
+    <form>
+      <input type="text" placeholder="Your name" required /><br>
+      <input type="email" placeholder="Your email" required /><br>
+      <textarea placeholder="Your message" rows="4"></textarea><br>
+      <button type="submit">Send</button>
+    </form>
+  </section>
 </body>
 </html>
