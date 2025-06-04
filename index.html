@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Jonathan A. Noah</title>
   <style>
     body {
@@ -11,9 +11,39 @@
       font-family: Arial, sans-serif;
       scroll-behavior: smooth;
     }
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 20px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
     section {
       padding: 60px 20px;
       transition: background-color 0.6s ease;
+    }
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ccc;
+      display: inline-block;
     }
     .hero {
       background-color: #f5f5f5;
@@ -23,13 +53,14 @@
       background-color: #e9ecef;
       display: flex;
       flex-wrap: wrap;
-      align-items: center;
+      align-items: flex-start;
       gap: 40px;
       padding: 60px;
     }
     .about img {
       max-width: 300px;
       border-radius: 12px;
+      flex-shrink: 0;
     }
     .portfolio {
       background-color: #fff;
@@ -45,7 +76,12 @@
     }
     .contact {
       background-color: #dfe6e9;
-      text-align: center;
+      display: flex;
+      flex-wrap: wrap-reverse;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+      padding: 60px;
     }
     .contact img {
       max-width: 300px;
@@ -53,28 +89,39 @@
     }
     form input, form textarea, form button {
       padding: 10px;
-      margin: 8px;
-      width: 80%;
+      margin: 8px 0;
+      width: 100%;
       max-width: 400px;
+      display: block;
     }
   </style>
 </head>
 <body>
-  <section class="hero">
+
+  <header>
     <h1>Jonathan A. Noah</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
     <p>Producer | Content & Creator Partnerships | Development & Programming | YouTube | Podcasts | Streaming</p>
   </section>
 
-  <section class="about">
+  <section class="about" id="about">
     <img src="JN_site_photo.avif" alt="Jonathan A. Noah" />
     <div>
+      <h2>About</h2>
       <p>Jonathan Noah is an accomplished Creative Leader, Executive Producer, and Creative Director with over a decade's worth of experience working with major international media brands.</p>
       <p>Noah's experience includes managing production teams and Executive Producing both original and branded content for YouTube, Meta, TikTok, linear, and streaming platforms for publishers like BuzzFeed, MTV, GSN, CBS, and more. His content has been seen by audiences in over 180 countries and gained hundreds of millions of impressions through linear and digital streams. With a strong background in content development, talent management, broadcast and digital media, Noah brings a diverse approach to production of all forms.</p>
       <p>Beyond his professional experience, Jonathan enjoys discovering new music, listening to podcasts, adventuring with his dog, traveling the world, and cooking full course meals.</p>
     </div>
   </section>
 
-  <section class="portfolio">
+  <section class="portfolio" id="portfolio">
     <h2>Portfolio</h2>
     <div class="portfolio-grid">
       <iframe src="https://www.youtube.com/embed/do6_7HugMXs" frameborder="0" allowfullscreen></iframe>
@@ -92,16 +139,19 @@
     </div>
   </section>
 
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Preferred method: use the form below.</p>
+  <section class="contact" id="contact">
+    <div>
+      <h2>Contact</h2>
+      <p>Preferred method: use the form below.</p>
+      <form>
+        <input type="text" placeholder="Your name" required />
+        <input type="email" placeholder="Your email" required />
+        <textarea placeholder="Your message" rows="4"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
     <img src="Harley_site_photo.avif" alt="Harley the Dog" />
-    <form>
-      <input type="text" placeholder="Your name" required /><br>
-      <input type="email" placeholder="Your email" required /><br>
-      <textarea placeholder="Your message" rows="4"></textarea><br>
-      <button type="submit">Send</button>
-    </form>
   </section>
+
 </body>
 </html>
